@@ -29,6 +29,7 @@ const MobileDropdown = ({ open, setOpen }) => {
   return (
     <div className={`nav__mobile-dropdown${open ? " open" : ""}`}>
       <ul>
+        <li><NavLink to="/clock" exact className="notification_link" onClick={() => setOpen(false)}>Clock</NavLink></li>
         <li><NavLink to="/random" exact className="notification_link" onClick={() => setOpen(false)}>Random</NavLink></li>
         <li><NavLink to="/drum" exact className="notification_link" onClick={() => setOpen(false)}>Drum</NavLink></li>
       </ul>
